@@ -36,36 +36,36 @@ struct retro_core_option_v2_category option_cats_us[] = {
    {
       "system",
       "System",
-      "Change region and hardware add-on settings."
+      "Configure region and hardware add-on settings."
    },
    {
       "video",
       "Video",
 #ifdef HAVE_NTSC_FILTER
-      "Change aspect ratio, display cropping, color palette and video filter options."
+      "Configure aspect ratio, display cropping, color palette, video filter options."
 #else
-      "Change aspect ratio, display cropping and color palette options."
+      "Configure aspect ratio, display cropping, color palette options."
 #endif
    },
    {
       "audio",
       "Audio",
-      "Change sound quality, volume, channel enable settings."
+      "Configure sound quality, volume, channel enable settings."
    },
    {
       "input",
       "Input",
-      "Change turbo and light gun settings."
+      "Configure turbo and light gun settings."
    },
    {
       "hacks",
       "Emulation Hacks",
-      "Change processor overclocking and emulation accuracy settings affecting low-level performance and compatibility."
+      "Configure processor overclocking and emulation accuracy settings affecting low-level performance and compatibility."
    },
    {
       "dip_switch",
       "DIP Switches",
-      "Change arcade game settings."
+      "Configure arcade game settings."
    },
    { NULL, NULL, NULL },
 };
