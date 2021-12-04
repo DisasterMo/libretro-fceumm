@@ -32,26 +32,26 @@ struct retro_core_option_v2_category option_cats_us[] = {
    {
       "system",
       "System",
-      "Configure region / hardware add-on parameters."
+      "Configure region and hardware add-on parameters."
    },
    {
       "video",
       "Video",
 #ifdef HAVE_NTSC_FILTER
-      "Configure aspect ratio / display cropping / color palette / video filter options."
+      "Configure aspect ratio, display cropping, color palette, video filter options."
 #else
-      "Configure aspect ratio / display cropping / color palette options."
+      "Configure aspect ratio, display cropping, color palette options."
 #endif
    },
    {
       "audio",
       "Audio",
-      "Configure sound quality / volume / channel enable settings."
+      "Configure sound quality, volume, channel enable settings."
    },
    {
       "input",
       "Input",
-      "Configure turbo / light gun parameters."
+      "Configure turbo and light gun parameters."
    },
    {
       "hacks",
@@ -85,7 +85,7 @@ struct retro_core_option_v2_definition option_defs_us_common[] = {
    },
    {
       "fceumm_game_genie",
-      "Game Genie Add-On (Restart)",
+      "Game Genie Add-On (Restart Required)",
       NULL,
       "Enable emulation of a Game Genie add-on cartridge, allowing cheat codes to be entered when launching games. The Game Genie ROM file 'gamegenie.nes' must be present in the frontend's system directory. Does not apply to FDS or arcade content.",
       NULL,
@@ -401,7 +401,7 @@ struct retro_core_option_v2_definition option_defs_us_common[] = {
       NULL,
       "input",
       {
-         { "lightgun",    "Lightgun" },
+         { "lightgun",    "Light gun" },
          { "touchscreen", "Touchscreen" },
          { "mouse",       "Mouse" },
          { NULL, NULL },
@@ -459,7 +459,7 @@ struct retro_core_option_v2_definition option_defs_us_common[] = {
       "fceumm_up_down_allowed",
       "Allow Opposing Directions",
       NULL,
-      "Allows simultaneous UP+DOWN or LEFT+RIGHT button combinations which can create different effects in some games.",
+      "Allows simultaneous UP+DOWN or LEFT+RIGHT button combinations, which can create different effects in some games.",
       NULL,
       "input",
       {
@@ -487,7 +487,7 @@ struct retro_core_option_v2_definition option_defs_us_common[] = {
       "fceumm_overclocking",
       "Overclock",
       NULL,
-      "Enables or disables overclocking which can reduce slowdowns in some games. Postrender method is more compatible with every game with Vblank more effective for games like Contra Force.",
+      "Enables or disables overclocking, which can reduce slowdowns in some games. Postrender method is more compatible with every game, Vblank is more effective for games like Contra Force.",
       NULL,
       "hacks",
       {
@@ -500,9 +500,9 @@ struct retro_core_option_v2_definition option_defs_us_common[] = {
    },
    {
       "fceumm_ramstate",
-      "RAM Power-On Fill (Restart)",
+      "RAM Power-On Fill (Restart Required)",
       NULL,
-      "Choose RAM startup during power up. Some games rely on initial ram values for random generator as an example.",
+      "RAM values on power up. Some games rely on initial RAM values for random number generation as an example.",
       NULL,
       "hacks",
       {
